@@ -8,14 +8,16 @@ def hello():
 @app.route("/status")
 def status_check():
     return jsonify({
+            'success':True,
             'result': 'OK - healthy'
             })
 
 @app.route("/metrics")
 def metrics_check():
+    metrics_data = {'UserCount': 140, 'UserCountActive': 23}
     return jsonify({
-            'success': True,
-            
+            'success':True,
+            'data': metrics_data
             })
 
 
