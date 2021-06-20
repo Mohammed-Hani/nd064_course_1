@@ -3,7 +3,7 @@ import logging
 from functools import wraps
 
 
-logging.basicConfig(filename='app.log', format='%(asctime)s, %(message)s', level=logging.INFO)
+logging.basicConfig(filename='app.log', format='%(asctime)s, %(message)s', level=logging.DEBUG)
 app = Flask(__name__)
 
 def endpoint_reached(func):
