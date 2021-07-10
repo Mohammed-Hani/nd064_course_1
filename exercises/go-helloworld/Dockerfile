@@ -12,6 +12,7 @@ WORKDIR /go/src/app
 # run commands within the container. 
 # For example, invoke a pip command 
 # to install dependencies defined in the requirements.txt file. 
+RUN go mod init
 RUN go build -o helloworld
 # expose an application port 
 EXPOSE 6111
