@@ -18,4 +18,4 @@ RUN go build -o helloworld
 EXPOSE 6111
 # provide a command to run on container start. 
 # For example, start the `app.py` application.
-CMD [ "helloworld" ]
+CMD [ "./helloworld" ]
